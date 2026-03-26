@@ -20,10 +20,6 @@
   # Set your time zone.
   time.timeZone = "Asia/Dhaka";
 
-  environment.sessionVariables = {
-    PATH = [ "$HOME/.npm-global/bin" ];
-  };
-
   # List packages installed in system profile.
   environment.systemPackages = with pkgs; [
     # System utilities

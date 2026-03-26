@@ -47,5 +47,4 @@
   # This value defines the first version of NixOS you have installed.
   # Do NOT change this value unless you have manually inspected all changes.
   system.stateVersion = "25.11";
-
 }

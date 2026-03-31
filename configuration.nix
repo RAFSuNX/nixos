@@ -20,11 +20,22 @@
   # Set your time zone.
   time.timeZone = "Asia/Dhaka";
 
+  # Select internationalisation properties.
+  i18n.defaultLocale = "en_US.UTF-8";
+
+  # Configure console keymap.
+  console.keyMap = "us";
+
+  # Configure X11/Wayland keymap.
+  services.xserver.xkb.layout = "us";
+
   # List packages installed in system profile.
   environment.systemPackages = with pkgs; [
     # System utilities
     nano
     wget
+    fastfetch
+    sshpass
 
     # Development tools
     claude-code

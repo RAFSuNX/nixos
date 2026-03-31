@@ -12,6 +12,11 @@
   services.displayManager.sddm = {
     enable = true;
     wayland.enable = true;
+    settings = {
+      General = {
+        InputMethod = "";
+      };
+    };
   };
 
   # Desktop-related packages.
@@ -23,6 +28,7 @@
     rofi
     wl-clipboard
     waybar
+    hyprlock
 
     # Utilities
     jq
@@ -37,6 +43,7 @@
     playerctl
     brightnessctl
     pamixer
+    pavucontrol
     libnotify
     networkmanagerapplet
 

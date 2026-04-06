@@ -53,6 +53,9 @@
     # Media tools
     ffmpeg-full
     vlc
+
+    # Fan control
+    nbfc-linux
   ];
 
   programs.steam = {                                                                                                                                                        

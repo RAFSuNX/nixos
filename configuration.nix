@@ -48,6 +48,9 @@
 
     # CLI tools
     cloudflare-warp
+
+    # Media tools
+    ffmpeg-full
   ];
 
   programs.steam = {                                                                                                                                                        

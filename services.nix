@@ -22,4 +22,7 @@
     enableOnBoot = true; # Start Docker daemon on system boot
     enableNvidia = true; # Deprecated but actually works on NixOS 25.x
   };
+
+  # Enable nbfc-linux for laptop fan control.
+  services.nbfc.enable = true;
 }

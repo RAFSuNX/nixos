@@ -51,6 +51,7 @@
 
     # Media tools
     ffmpeg-full
+    vlc
   ];
 
   programs.steam = {                                                                                                                                                        

@@ -37,6 +37,7 @@
     fastfetch
     sshpass
     python3
+    bc
 
     # Development tools
     claude-code

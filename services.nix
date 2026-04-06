@@ -23,4 +23,10 @@
     enableNvidia = true; # Deprecated but actually works on NixOS 25.x
   };
 
+  # Fan control via NBFC (NoteBook Fan Control)
+  # Using AN515-42 as closest AMD match for ANV16-42
+  services.nbfc = {
+    enable = true;
+    config = "Acer Nitro AN515-42";
+  };
 }

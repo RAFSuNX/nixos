@@ -62,4 +62,7 @@
     GDK_BACKEND = "wayland,x11,*";
     QT_QPA_PLATFORM = "wayland;xcb";
   };
+
+  # 5. Enable NVIDIA Container Toolkit for GPU acceleration in containers.
+  hardware.nvidia-container-toolkit.enable = true;
 }

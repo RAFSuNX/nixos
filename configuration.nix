@@ -36,6 +36,7 @@
     wget
     fastfetch
     sshpass
+    python3
 
     # Development tools
     claude-code
@@ -48,6 +49,11 @@
     # CLI tools
     cloudflare-warp
   ];
+
+  programs.steam = {                                                                                                                                                        
+    enable = true;                                                                                                                                                          
+    gamescopeSession.enable = true;                                                                                                                                         
+  };
 
   nixpkgs.config.allowUnfree = true;
 

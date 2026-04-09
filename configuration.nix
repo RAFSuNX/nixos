@@ -50,7 +50,7 @@
     age
     fluxcd
     sops
-    helm
+    kubernetes-helm
 
     # CLI tools
     cloudflare-warp

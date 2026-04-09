@@ -6,6 +6,7 @@
     ./hardware-configuration.nix
     ./mounts.nix
     ./nvidia.nix
+    ./nbfc.nix
 
     # System configuration
     ./boot.nix
@@ -46,6 +47,10 @@
     git
     curl
     kubectl
+    age
+    fluxcd
+    sops
+    helm
 
     # CLI tools
     cloudflare-warp

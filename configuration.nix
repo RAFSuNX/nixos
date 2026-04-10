@@ -63,10 +63,13 @@
     nbfc-linux
   ];
 
-  programs.steam = {                                                                                                                                                        
-    enable = true;                                                                                                                                                          
-    gamescopeSession.enable = true;                                                                                                                                         
+  programs.steam = {
+    enable = true;
+    gamescopeSession.enable = true;
   };
+
+  # Enable ADB/fastboot with udev rules for Android device access.
+  programs.adb.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 

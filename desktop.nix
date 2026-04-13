@@ -50,6 +50,8 @@
     # Applications
     google-chrome
     jellyfin-media-player
+    xfce.thunar
+    imv
   ];
 
   # Enable touchpad support.

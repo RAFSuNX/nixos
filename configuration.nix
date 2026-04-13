@@ -41,6 +41,7 @@
     bc
 
     # Development tools
+    opencode
     claude-code
     nodejs_24
     gh

@@ -51,6 +51,7 @@
     fluxcd
     sops
     kubernetes-helm
+    jdk17
 
     # CLI tools
     cloudflare-warp

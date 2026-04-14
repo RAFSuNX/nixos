@@ -22,12 +22,4 @@
     enableOnBoot = true; # Start Docker daemon on system boot
     enableNvidia = true; # Deprecated but actually works on NixOS 25.x
   };
-
-  # GitHub Actions self-hosted runner for RAFSuNX/fisense.
-  # Token stored in /etc/github-runner-token (outside Nix store, chmod 600).
-  services.github-runners.fisense = {
-    enable = true;
-    url = "https://github.com/RAFSuNX/fisense";
-    tokenFile = "/etc/github-runner-token";
-  };
 }

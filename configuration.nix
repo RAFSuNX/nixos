@@ -43,6 +43,7 @@
     # Development tools
     opencode
     claude-code
+    bun
     nodejs_24
     gh
     git

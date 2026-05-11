@@ -7,7 +7,13 @@
   networking.networkmanager = {
     enable = true;
     dns = "none"; # Disable NetworkManager DNS management to force our DNS
+    wifi.powersave = false;
   };
+
+  # Fix MediaTek MT7922 WiFi dropping - disable PCIe ASPM power management
+  boot.extraModprobeConfig = ''
+    options mt7921e disable_aspm=Y
+  '';
 
   # DNS Configuration: Cloudflare (primary) and Google (secondary)
   # These will be used always, even when WARP VPN is active
@@ -26,8 +32,14 @@
     "2001:4860:4860::8844"
   ];
 
+  # Force gigabit speed on LAN - driver was limiting advertised modes.
+  systemd.network.links."10-lan" = {
+    matchConfig.Name = "enp2s0";
+    linkConfig.BitsPerSecond = "1G";
+  };
+
   # Open ports in the firewall.
-  networking.firewall.allowedTCPPorts = [ 22 8081 ];
+  networking.firewall.allowedTCPPorts = [ 22 3000 8000 8081 ];
   networking.firewall.allowedUDPPorts = [ 22 ];
   networking.firewall.enable = true;
 }

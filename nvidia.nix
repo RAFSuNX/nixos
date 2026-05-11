@@ -5,6 +5,9 @@
   hardware.graphics = {
     enable = true;
     enable32Bit = true; # Required for Steam/Wine
+    extraPackages = with pkgs; [
+      nvidia-vaapi-driver
+    ];
   };
 
   # 2. NVIDIA Driver Configuration.

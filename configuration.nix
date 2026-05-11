@@ -18,6 +18,9 @@
     ./desktop.nix
   ];
 
+  # Enable redistributable firmware (WiFi, Bluetooth, GPU microcode, etc).
+  hardware.enableRedistributableFirmware = true;
+
   # Set your time zone.
   time.timeZone = "Asia/Dhaka";
 
@@ -37,12 +40,13 @@
     wget
     fastfetch
     sshpass
+    iw
     python3
     bc
 
     # Development tools
     opencode
-    claude-code
+    # claude-code
     bun
     nodejs_24
     gh
@@ -57,6 +61,8 @@
 
     # CLI tools
     cloudflare-warp
+    distrobox
+    podman
 
     # Media tools
     ffmpeg-full
@@ -70,6 +76,8 @@
     enable = true;
     gamescopeSession.enable = true;
   };
+
+  programs.nix-ld.enable = true;
 
   # Enable ADB/fastboot with udev rules for Android device access.
   programs.adb.enable = true;

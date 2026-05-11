@@ -4,7 +4,9 @@
   # Define a user account. Don't forget to set a password with 'passwd'.
   users.users.rafsunx = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "docker" "adbusers" ]; # Enable 'sudo', Docker, and ADB for the user
+    subUidRanges = [{ startUid = 100000; count = 65536; }];
+    subGidRanges = [{ startGid = 100000; count = 65536; }];
+    extraGroups = [ "wheel" "docker" "adbusers" "libvirtd" "kvm" ]; # Enable 'sudo', Docker, ADB, and KVM for the user
     packages = with pkgs; [
       tree
       slack

@@ -36,7 +36,7 @@
     grim
     slurp
     matugen
-    swww
+    awww
     swaynotificationcenter
 
     # System controls
@@ -50,7 +50,7 @@
     # Applications
     google-chrome
     jellyfin-media-player
-    xfce.thunar
+    thunar
     imv
   ];
 
@@ -63,6 +63,4 @@
     pulse.enable = true;
   };
 
-  # Wayland environment variable.
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 }

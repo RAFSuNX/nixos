@@ -41,37 +41,33 @@
     fastfetch
     sshpass
     iw
-    python3
     bc
-
-    # Development tools
-    uv
-    opencode
-    # claude-code
-    bun
-    nodejs_24
-    gh
     git
     curl
+    android-tools
+
+    # Kubernetes / GitOps
+    gh
     kubectl
     age
     fluxcd
     sops
     kubernetes-helm
-    jdk17
 
-    # CLI tools
-    cloudflare-warp
+    # Containers
     distrobox
     podman
     podman-compose
 
-    # Media tools
+    # Media
     ffmpeg-full
     vlc
 
     # Fan control
     nbfc-linux
+
+    # Network
+    cloudflare-warp
   ];
 
   programs.steam = {
@@ -80,9 +76,6 @@
   };
 
   programs.nix-ld.enable = true;
-
-  # Enable ADB/fastboot with udev rules for Android device access.
-  programs.adb.enable = true;
 
   swapDevices = [{ device = "/var/lib/swapfile"; size = 4 * 1024; }];
 

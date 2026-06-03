@@ -45,6 +45,7 @@
     bc
 
     # Development tools
+    uv
     opencode
     # claude-code
     bun
@@ -63,6 +64,7 @@
     cloudflare-warp
     distrobox
     podman
+    podman-compose
 
     # Media tools
     ffmpeg-full
@@ -81,6 +83,8 @@
 
   # Enable ADB/fastboot with udev rules for Android device access.
   programs.adb.enable = true;
+
+  swapDevices = [{ device = "/var/lib/swapfile"; size = 4 * 1024; }];
 
   nixpkgs.config.allowUnfree = true;
 

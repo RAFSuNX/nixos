@@ -23,10 +23,4 @@
   virtualisation.libvirtd.enable = true;
   programs.virt-manager.enable = true;
 
-  # Enable Docker containerization platform.
-  virtualisation.docker = {
-    enable = true;
-    enableOnBoot = true; # Start Docker daemon on system boot
-    enableNvidia = true; # Deprecated but actually works on NixOS 25.x
-  };
 }

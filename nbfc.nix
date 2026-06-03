@@ -6,6 +6,7 @@ in {
   systemd.services.nbfc_service = {
     enable = true;
     description = "NoteBook FanControl service";
+    unitConfig.ConditionPathExists = "/home/${myUser}/.config/nbfc.json";
     serviceConfig.Type = "simple";
     path = [ pkgs.kmod ];
     script = "${pkgs.nbfc-linux}/${command}";

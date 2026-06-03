@@ -6,7 +6,7 @@
     isNormalUser = true;
     subUidRanges = [{ startUid = 100000; count = 65536; }];
     subGidRanges = [{ startGid = 100000; count = 65536; }];
-    extraGroups = [ "wheel" "adbusers" "libvirtd" "kvm" ]; # Enable 'sudo', Docker, ADB, and KVM for the user
+    extraGroups = [ "wheel" "libvirtd" "kvm" ]; # Enable 'sudo' and KVM for the user
     packages = with pkgs; [
       tree
       slack

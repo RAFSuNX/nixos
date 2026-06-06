@@ -45,6 +45,7 @@
     git
     curl
     android-tools
+    claude-code
 
     # Kubernetes / GitOps
     gh

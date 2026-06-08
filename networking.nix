@@ -39,8 +39,8 @@
   };
 
   # Open ports in the firewall.
-  networking.firewall.allowedTCPPorts = [ 22 3000 8000 8081 ];
-  networking.firewall.allowedUDPPorts = [ 22 config.services.tailscale.port ];
+  networking.firewall.allowedTCPPorts = [ 22 3000 8000 8081 8188 ];
+  networking.firewall.allowedUDPPorts = [ 22 69 config.services.tailscale.port ];
   networking.firewall.trustedInterfaces = [ "tailscale0" ];
   networking.firewall.enable = true;
 }

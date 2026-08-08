@@ -10,6 +10,7 @@
     ./packages.nix
     ./wayland.nix
     ./nvidia.nix
+    ./nbfc.nix
   ];
 
   time.timeZone = "Asia/Dhaka";

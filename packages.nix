@@ -3,12 +3,18 @@
 {
   nixpkgs.config.allowUnfree = true;
 
+  programs.firefox.enable = true;
+
   programs.bash.shellAliases = {
     snrs = "sudo nixos-rebuild switch";
-    docker = "docker --network=host";
   };
 
   environment.systemPackages = with pkgs; [
+    kubectl
+    fluxcd
+    doppler
+
+    android-tools
     wget
     gh
     git

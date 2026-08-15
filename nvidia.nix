@@ -36,7 +36,7 @@
   environment.sessionVariables = {
     LIBVA_DRIVER_NAME = "nvidia";
     __GLX_VENDOR_LIBRARY_NAME = "nvidia";
-NVD_BACKEND = "direct";
+    NVD_BACKEND = "direct";
     GDK_BACKEND = "wayland,x11,*";
     QT_QPA_PLATFORM = "wayland;xcb";
     NIXOS_OZONE_WL = "1";

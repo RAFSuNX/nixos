@@ -11,6 +11,7 @@
     ./wayland.nix
     ./nvidia.nix
     ./nbfc.nix
+    ./vpn.nix
   ];
 
   time.timeZone = "Asia/Dhaka";
